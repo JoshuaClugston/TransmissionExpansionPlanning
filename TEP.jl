@@ -2,12 +2,12 @@
 # using JuMP, HiGHS, XLSX # using HiGHS, can use CPLEX or Gurobi later but will need a license -- you may need to install these packages as well using Pkg.add("module name here")
 using JuMP, CPLEX, XLSX
 
-data = XLSX.readxlsx("./data.xlsx") # xlsx with data in separate sheets 
+data = XLSX.readxlsx("./data/data.xlsx") # xlsx with data in separate sheets 
 
 bus = data["bus"]
 branch = data["branch"] # set of existing lines 
 gen = data["gen"]
-new_branch = data["new_branch"] # TODO: fill in data 
+new_branch = data["new_branch"] 
 
 # bus data
 bus_i = [] # bus id
