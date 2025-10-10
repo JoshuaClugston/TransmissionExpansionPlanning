@@ -1,6 +1,5 @@
-# using Pkg; Pkg.add("XLSX") # incase not installed already 
-# using JuMP, HiGHS, XLSX # using HiGHS, can use CPLEX or Gurobi later but will need a license -- you may need to install these packages as well using Pkg.add("module name here")
-using JuMP, CPLEX, XLSX
+# using Pkg; Pkg.add("XLSX"); Pkg.add("CPLEX"); Pkg.add("JuMP"); Pkg.add("HiGHS") # incase not installed already 
+using JuMP, CPLEX, HiGHS, XLSX
 
 data = XLSX.readxlsx("./data/data.xlsx") # xlsx with data in separate sheets 
 
