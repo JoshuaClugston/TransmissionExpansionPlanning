@@ -40,7 +40,7 @@ overall_used = sum(list(zip(*gen_info))[1])/sum(list(zip(*gen_info))[2])+.0005 #
 plt.axhline(overall_used, color = colors[c_idx], label="Total Capacity Used") ## total percentage used 
 plt.ylabel("Percentage Used", fontsize=14)
 plt.xlabel("Generator ID", fontsize=14) 
-plt.xticks(index, rotation="vertical", fontsize = 5)
+# plt.xticks(index, rotation="vertical", fontsize = 5) ## can uncomment if xticks are desired. Will only show ticks for generators which are not using all capacity
 plt.yticks(sorted([i for i in np.arange(0,1.2,.2)] + [overall_used]))
 
 ## adjusting so that more ticks fit 
