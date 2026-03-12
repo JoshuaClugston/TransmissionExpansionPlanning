@@ -16,6 +16,7 @@ plt.rcParams['axes.facecolor'] = "#1d1d1d"
 plt.rcParams['ytick.color'] = "#e6e6e6"
 plt.rcParams['xtick.color'] = "#e6e6e6"
 plt.rcParams['axes.labelcolor'] = "#e6e6e6"
+plt.rcParams['figure.facecolor'] = "#1d1d1d"
 plt.figure(figsize=(20,6))
 
 c_idx = 0
